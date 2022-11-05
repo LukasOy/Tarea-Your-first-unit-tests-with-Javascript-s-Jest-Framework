@@ -15,14 +15,13 @@ function fromEuroToDollar(euro){
     return dollar
 }
 
-
 function fromDollarToYen(dollar){
-    let yen = oneEuroIs.JPY*(oneEuroIs.USD/dollar)
+    let yen = oneEuroIs.JPY*(oneEuroIs.USD*dollar)
     return yen
-console.log(fromDollarToYen(10))
+console.log(fromDollarToYen(10));
 }
 function fromYenToPound(yen){
-    let Pound = oneEuroIs.GBP*(oneEuroIs.JPY*(oneEuroIs.USD/yen))
+    let Pound = ((oneEuroIs.JPY/yen)*oneEuroIs.GBP)
     return Pound
 }
 
