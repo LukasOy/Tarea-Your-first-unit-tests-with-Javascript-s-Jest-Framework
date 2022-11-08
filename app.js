@@ -12,17 +12,17 @@ let oneEuroIs = {
 }
 function fromEuroToDollar(euro){
     let dollar = oneEuroIs.USD*euro
-    return dollar
+    return dollar;
 }
 
 function fromDollarToYen(dollar){
     let yen = oneEuroIs.JPY*(oneEuroIs.USD*dollar)
-    return yen
+    return yen;
 console.log(fromDollarToYen(10));
 }
 function fromYenToPound(yen){
-    let Pound = ((oneEuroIs.JPY/yen)*oneEuroIs.GBP)
-    return Pound
+    let Pound = oneEuroIs.GBP*(1/oneEuroIs.JPY)*yen;
+    return Pound;
 }
 
 
