@@ -22,7 +22,7 @@ test("Tienes 5 dolares y te tiene que dar 767.4000000000001 yen", function(){
 
     let yen = fromDollarToYen(5);
 
-    expect(yen).toBe(767.4000000000001)
+    expect(yen).toBe(767.4000000000001);
 })
 
 test("Tienes 1000 yenes y el cambio es 6 libras", function(){
